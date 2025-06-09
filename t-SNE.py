@@ -3,7 +3,7 @@
 # Script info
 # -----------
 # __author__ = 'Ryan Godin'
-# __copyright__ = '© His Majesty the King in Right of Canada, as represented by the Minister of Agriculture and Agri-Food Canada,' \
+# __copyright__ = '© His Majesty the King in Right of Canada, as represented by the Minister of Agriculture and Agri-Food,' \
 #                 '2025-'
 # __credits__ = 'Ryan Godin, Etienne Lord'
 # __email__ = ''
@@ -16,6 +16,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 import time
+import argparse
 from sklearn.manifold import TSNE
 
 class tSNE:
@@ -101,90 +102,13 @@ class tSNE:
             plt.show()
       else:
             print('[WARN] No data points to plot after sampling.')
-
-    def visualize_train_vs_test_tsne(self):
-        """
-        Performs t-SNE on combined train, test, and validation sets
-        """
-        # Reshape train, test, and validation data if necessary
-        x_train_reshaped = self.x_train
-        if x_train_reshaped.ndim > 2:
-            n_samples_train = x_train_reshaped.shape[0]
-            n_features_train = np.prod(x_train_reshaped.shape[1:])
-            x_train_reshaped = x_train_reshaped.reshape(n_samples_train, n_features_train)
-
-        x_test_reshaped = self.x_test
-        if x_test_reshaped.ndim > 2:
-            n_samples_test = x_test_reshaped.shape[0]
-            n_features_test = np.prod(x_test_reshaped.shape[1:])
-            x_test_reshaped = x_test_reshaped.reshape(n_samples_test, n_features_test)
-
-        x_valid_reshaped = self.x_valid
-        if x_valid_reshaped.ndim > 2:
-            n_samples_valid = x_valid_reshaped.shape[0]
-            n_features_valid = np.prod(x_valid_reshaped.shape[1:])
-            x_valid_reshaped = x_valid_reshaped.reshape(n_samples_valid, n_features_valid)
-
-        # Combine train, test, and validation data
-        x_combined = np.vstack((x_train_reshaped, x_test_reshaped, x_valid_reshaped))
-
-        # Create labels for train, test, and validation sets
-        labels_combined = np.array(
-            ['Train'] * x_train_reshaped.shape[0] +
-            ['Test'] * x_test_reshaped.shape[0] +
-            ['Validation'] * x_valid_reshaped.shape[0]
-        )
-
-        if x_combined.shape[0] > 0:
-            # Perform t-SNE on combined data
-            tsne_combined = TSNE(n_components=2, random_state=self.time)
-            x_combined_tsne = tsne_combined.fit_transform(x_combined)
-
-            # Plotting
-            plt.figure(figsize=(8, 6))
-
-            # Plot train points
-            train_indices = (labels_combined == 'Train')
-            plt.scatter(
-                x_combined_tsne[train_indices, 0],
-                x_combined_tsne[train_indices, 1],
-                label='Train',
-                c='blue',
-                alpha=0.6,
-                edgecolors='w'
-            )
-
-            # Plot test points
-            test_indices = (labels_combined == 'Test')
-            plt.scatter(
-                x_combined_tsne[test_indices, 0],
-                x_combined_tsne[test_indices, 1],
-                label='Test',
-                c='red',
-                alpha=0.6,
-                edgecolors='w'
-            )
-
-            # Plot validation points
-            valid_indices = (labels_combined == 'Validation')
-            plt.scatter(
-                x_combined_tsne[valid_indices, 0],
-                x_combined_tsne[valid_indices, 1],
-                label='Validation',
-                c='green',  # You can choose a different color
-                alpha=0.6,
-                edgecolors='w'
-            )
-
-
-            plt.title('t-SNE Visualization of Train, Test, and Validation Sets')
-            plt.xlabel('Axis 1')
-            plt.ylabel('Axis 2')
-            plt.legend()
-            plt.tight_layout()
-            plt.savefig(f'tSNE_train_test_valid_{self.time}.svg') # Save as SVG
-            plt.show()
-        else:
-            print('[WARN] Not enough data points in combined train, test, and validation sets for t-SNE.')
-
-
+   
+if __name__ == "__main__":
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description="")
+    parser.add_argument("--data", type=str, required=True, 
+                      help="Path to the dataset NPZ file")
+    args = parser.parse_args()
+    tsne = tSNE(args.data)
+    
+    
