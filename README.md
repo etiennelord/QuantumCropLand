@@ -1,5 +1,5 @@
 # QuantumCropLand (v1.0 June 2025) 
-Small dataset for advancing research on quantum image encoding and classification for agriculture application. The dataset is provided as a numpy file (npz) with two vectors named 'data' and 'labels'. The data were extracted form the Sentinel-2 (ESA) satellite imagery using [Google Earth Engine](https://earthengine.google.com/  "Google Earth Engine"), using the [AAFC Annual Crop Inventory](https://www.agr.gc.ca/atlas/aci) layers.
+Small dataset for advancing research on quantum image encoding and classification for agriculture application. The dataset is provided as a numpy file (npz) with two vectors named '_data_' and '_labels_'. The data were extracted form the Sentinel-2 (ESA) satellite imagery using [Google Earth Engine](https://earthengine.google.com/  "Google Earth Engine"), using the [AAFC Annual Crop Inventory](https://www.agr.gc.ca/atlas/aci) layers.
 
 The dataset goal is to facilitate work on quantum image encoding and classification by providing a standard dataset, similar to the Iris dataset or EuroSat dataset, but for agricultural data. 
 
@@ -72,6 +72,8 @@ _Classification Report (Epochs 50, Seed 42, data division: 70-15-15%) :_
     accuracy                           0.76        75
     macro avg      0.75      0.77      0.75        75
     weighted avg   0.76      0.76      0.75        75
+
+Note that those classification results present low accuracy, in contrast to actual '_production_' machine learning models principaly due to the low data voluem during the training, no use of data augmentation, and inherent data diversity. 
 
 # Future 
 
