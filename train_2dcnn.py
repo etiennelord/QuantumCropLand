@@ -280,7 +280,7 @@ def main(args):
 
 if __name__ == "__main__":
     # Parse command line arguments
-    parser = argparse.ArgumentParser(description="Train 2D CNN on Hyperspectral Data")
+    parser = argparse.ArgumentParser(description="Train 2D CNN on Multispectral Data")
     parser.add_argument("--data", type=str, required=True, 
                       help="Path to the dataset NPZ file")
     parser.add_argument("--save_dir", required=True, 
