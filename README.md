@@ -57,7 +57,7 @@ The dataset is used to test different convolutional neural network (CNN) and qua
 
 ![dataset T-distributed Stochastic Neighbor Embedding overview](https://github.com/etiennelord/QuantumCropLand/blob/main/20250605_tSNE.svg)
 
-# Results for the provided 2D-CNN
+# Sample results for the provided 2D-CNN
 
 _Classification Report (Epochs 50, Seed 42, data division: 70-15-15%) :_
 
@@ -74,6 +74,8 @@ _Classification Report (Epochs 50, Seed 42, data division: 70-15-15%) :_
     weighted avg   0.76      0.76      0.75        75
 
 Note that those classification results present low accuracy, in contrast to actual '_production_' machine learning models principaly due to the low data volume during the model training, no use of data augmentation, and inherent data diversity. 
+
+We encourage researchers and practitioners to improve those classification results.
 
 # Future 
 
