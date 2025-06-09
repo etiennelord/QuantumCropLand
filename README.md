@@ -3,7 +3,7 @@ Small dataset for advancing research on quantum image encoding and classificatio
 
 The dataset goal is to facilitate work on quantum image encoding and classification by providing a standard dataset, similar to the Iris dataset or EuroSat dataset, but for agricultural data. 
 
-Authors: Etienne Lord, Ryan Godin (Agriculture and Agri-Food Canada)
+Authors: Ryan Godin, Etienne Lord (Agriculture and Agri-Food Canada)
 
 # Dataset statistics
 _Filename_: 20250605_16x16_12channel_ndvi_psri.npz
