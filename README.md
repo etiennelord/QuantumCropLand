@@ -1,5 +1,7 @@
-# QuantumCropLand
-Small dataset for advancing research on quantum image encoding and classification for agriculture application. The dataset is provided as a numpy file (npz) with two vectors named 'data' and 'labels'.
+# QuantumCropLand (v1.0 June 2025) 
+Small dataset for advancing research on quantum image encoding and classification for agriculture application. The dataset is provided as a numpy file (npz) with two vectors named 'data' and 'labels'. The data were extracted form the Sentinel-2 (ESA) satellite imagery using [Google Earth Engine](https://earthengine.google.com/  "Google Earth Engine"), using the [AAFC Annual Crop Inventory](https://www.agr.gc.ca/atlas/aci) layers.
+
+Authors: Etienne Lord, Ryan Godin (Agriculture and Agri-Food Canada)
 
 # Dataset statistics
 _Filename_: 20250605_16x16_12channel_ndvi_psri.npz
@@ -49,5 +51,25 @@ File Size: 7006 kB
 The dataset was created using Google Earth Engine, similarly to the work of :
 Boatswain Jacques, A. A., Diallo, A. B., & Lord, E. (2023). The Canadian Cropland Dataset: A New Land Cover Dataset for Multitemporal Deep Learning Classification in Agriculture. arXiv [Cs.CV]. Retrieved from http://arxiv.org/abs/2306.00114
 
-The dataset was used to test different convolutional neural network (CNN) and quantum CNN (QCNN) architecture. Sample scripts for classification are provided.
+The dataset is used to test different convolutional neural network (CNN) and quantum CNN (QCNN) architecture using only small number of images. Sample scripts for classification are provided. The selected images were manually selected to express some crop diversity from different Canadian provinces and seasons. 
+
+# Results for the provided 2D-CNN
+
+_Classification Report (Epochs 50, Seed 42, data division: 70-15-15%) :_
+
+              precision    recall  f1-score   support
+
+      Barley       0.78      0.75      0.77        24
+        Corn       0.69      1.00      0.82         9
+         Oat       0.71      0.71      0.71        14
+     Orchard       0.82      0.88      0.85        16
+     Soybean       0.75      0.50      0.60        12
+
+    accuracy                           0.76        75
+    macro avg      0.75      0.77      0.75        75
+    weighted avg   0.76      0.76      0.75        75
+
+# Future 
+
+This dataset is evolving. Future updates will contain Sentinel-1 data as well as elevation data.
 
