@@ -73,7 +73,7 @@ _Classification Report (Epochs 50, Seed 42, data division: 70-15-15%) :_
     macro avg      0.75      0.77      0.75        75
     weighted avg   0.76      0.76      0.75        75
 
-Note that those classification results present low accuracy, in contrast to actual '_production_' machine learning models principaly due to the low data voluem during the training, no use of data augmentation, and inherent data diversity. 
+Note that those classification results present low accuracy, in contrast to actual '_production_' machine learning models principaly due to the low data volume during the model training, no use of data augmentation, and inherent data diversity. 
 
 # Future 
 
