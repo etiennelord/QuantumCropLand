@@ -6,7 +6,7 @@
 # Script info
 # -----------
 # __author__ = 'Ryan Godin'
-# __copyright__ = '© His Majesty the King in Right of Canada, as represented by the Minister of Natural Resources,' \
+# __copyright__ = '© His Majesty the King in Right of Canada, as represented by the Minister of Agriculture and Agri-Food Canada,' \
 #                 '2025-'
 # __credits__ = 'Ryan Godin, Etienne Lord'
 # __email__ = ''
