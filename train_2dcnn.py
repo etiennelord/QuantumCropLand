@@ -1,7 +1,20 @@
+# !/usr/bin/env python
 # Sample 2D-CNN from scratch to classify canadian crop land 
 # Note: No data augmentation is used to facilitate comparison with QCNN
 # 
-# Etienne Lord, Ryan Godin, Agriculture and Agri-Food Canada (2025)
+#
+# Script info
+# -----------
+# __author__ = 'Ryan Godin'
+# __copyright__ = '© His Majesty the King in Right of Canada, as represented by the Minister of Natural Resources,' \
+#                 '2025-'
+# __credits__ = 'Ryan Godin, Etienne Lord'
+# __email__ = ''
+# __license__ = 'Open Government Licence - Canada'
+# __maintainer__ = 'Ryan Godin, Etienne Lord'
+# __status__ = 'Development'
+# __version__ = '1.0.1'
+
 import os
 import numpy as np
 from pathlib import Path
