@@ -5,6 +5,17 @@ The dataset goal is to facilitate work on quantum image encoding and classificat
 
 Authors: Ryan Godin, Amanda Boatswain Jacques, Etienne Lord (Agriculture and Agri-Food Canada)
 
+# Dataset information
+
+![dataset overview](https://github.com/etiennelord/QuantumCropLand/blob/main/20250605_16x16_12channel_ndvi_psri.png)
+
+The dataset was created using Google Earth Engine, similarly to the work of :
+Boatswain Jacques, A. A., Diallo, A. B., & Lord, E. (2023). The Canadian Cropland Dataset: A New Land Cover Dataset for Multitemporal Deep Learning Classification in Agriculture. arXiv [Cs.CV]. Retrieved from http://arxiv.org/abs/2306.00114
+
+The dataset is used to test different convolutional neural network (CNN) and quantum CNN (QCNN) architecture using only small number of images. Sample scripts for classification are provided. The selected images were manually selected to express some crop diversity from different Canadian provinces and seasons. The resulting dataset selection clustering using t-distributed Stochastic Neighbor Embedding (t-SNE) shows the diversity in the dataset images.
+
+![dataset T-distributed Stochastic Neighbor Embedding overview](https://github.com/etiennelord/QuantumCropLand/blob/main/20250605_tSNE.svg)
+
 # Dataset statistics
 _Filename_: 20250605_16x16_12channel_ndvi_psri.npz
 
@@ -45,17 +56,6 @@ Shape of data: (500, 14, 16, 16)
 Shape of labels: (500,)
 
 File Size: 7006 kB
-
-# Dataset information
-
-![dataset overview](https://github.com/etiennelord/QuantumCropLand/blob/main/20250605_16x16_12channel_ndvi_psri.png)
-
-The dataset was created using Google Earth Engine, similarly to the work of :
-Boatswain Jacques, A. A., Diallo, A. B., & Lord, E. (2023). The Canadian Cropland Dataset: A New Land Cover Dataset for Multitemporal Deep Learning Classification in Agriculture. arXiv [Cs.CV]. Retrieved from http://arxiv.org/abs/2306.00114
-
-The dataset is used to test different convolutional neural network (CNN) and quantum CNN (QCNN) architecture using only small number of images. Sample scripts for classification are provided. The selected images were manually selected to express some crop diversity from different Canadian provinces and seasons. The resulting dataset selection clustering using t-distributed Stochastic Neighbor Embedding (t-SNE) shows the diversity in the dataset images.
-
-![dataset T-distributed Stochastic Neighbor Embedding overview](https://github.com/etiennelord/QuantumCropLand/blob/main/20250605_tSNE.svg)
 
 # Sample results for the provided 2D-CNN
 
