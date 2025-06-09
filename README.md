@@ -1,7 +1,7 @@
 # QuantumCropLand
 Small dataset for advancing research on quantum image encoding and classification for agriculture application. The dataset is provided as a numpy file (npz) with two vectors named 'data' and 'labels'.
 
-# Dataset Statistics
+# Dataset statistics
 _Filename_: 20250605_16x16_12channel_ndvi_psri.npz
 
 _Creation Date_: 2025-06-05
@@ -41,3 +41,7 @@ Shape of data: (500, 14, 16, 16)
 Shape of labels: (500,)
 
 File Size: 7006 kB
+
+# Dataset information
+
+
