@@ -46,7 +46,7 @@ File Size: 7006 kB
 
 ![dataset overview](https://github.com/etiennelord/QuantumCropLand/blob/main/20250605_16x16_12channel_ndvi_psri.png)
 
-The dataset was created using Google Earth Engine, similarly to the work of Boatswain et al. (2023)
+The dataset was created using Google Earth Engine, similarly to the work of :
 Boatswain Jacques, A. A., Diallo, A. B., & Lord, E. (2023). The Canadian Cropland Dataset: A New Land Cover Dataset for Multitemporal Deep Learning Classification in Agriculture. arXiv [Cs.CV]. Retrieved from http://arxiv.org/abs/2306.00114
 
 The dataset was used to test different convolutional neural network (CNN) and quantum CNN (QCNN) architecture. Sample scripts for classification are provided.
