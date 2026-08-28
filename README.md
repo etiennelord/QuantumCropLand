@@ -12,6 +12,8 @@ The final bands were the B2, B3, B4, B5, B6, B7, B8, B8A, B11, B12, NDVI, PSRI, 
 
 All the single pixel point fall within the field boundary, and 5 000 points for each crop were recorded (65,000 total). Each crop type was verified. 
 
+Authors: Etienne Lord, Ryan Godin, Dongzhi Xi, Catherine Champagne
+
 # Dataset information
 
 ![dataset overview](https://github.com/etiennelord/QuantumCropLand/blob/main/20250605_16x16_12channel_ndvi_psri.png)
