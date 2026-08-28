@@ -5,6 +5,13 @@ The dataset goal is to facilitate work on quantum image encoding and classificat
 
 Authors: Ryan Godin, Amanda Boatswain Jacques, Etienne Lord (Agriculture and Agri-Food Canada)
 
+# QuantumCropLand (v1.5 August 2026) 
+Single pixel (10x10m) version of the dataset composed of 13 predominant crops in North America crops: barley (Hordeum vulgare), canola (Brassica napus), corn (Zea mays), lentil (Lens culinaris), oat (Avena sativa), orchard crops, pasture, pea (Pisum sativum), potato (Solanum tuberosum), soybean (Glycine max (L.) Merr.), spring wheat (Triticum aestivum (L.)), vegetables, and winter wheat (Triticum aestivum subsp. vulgare). 
+
+The final bands were the B2, B3, B4, B5, B6, B7, B8, B8A, B11, B12, NDVI, PSRI, VV, VH, VH/VV ratio, elevation and slope. THe data was captured using the Sentinel-1 and Sentinel-2 satellite constellation. Elevation and slope was extracted from the Canadian Digital Elevation Model (CDEM). Elevations, expressed as meter, are orthometric and expressed in reference to mean sea level (Canadian Geodetic Vertical Datum 1928 (CGVD28)). NDVI and PSRI indices were calculated as in Boatswain et al. (2023, see below). Data was captured between the month of June to October 2023.
+
+All the single pixel point fall within the field boundary, and 5 000 points for each crop were recorded (65,000 total). Each crop type was verified. 
+
 # Dataset information
 
 ![dataset overview](https://github.com/etiennelord/QuantumCropLand/blob/main/20250605_16x16_12channel_ndvi_psri.png)
