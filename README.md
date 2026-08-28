@@ -89,7 +89,7 @@ We encourage researchers and practitioners to improve those classification resul
 This dataset and associated data is evolving. 
 
 Future updates will include :
-- Sentinel-1 data as well as elevation data.
+- Sentinel-1 data as well as elevation data -> See the v1.5.
 - Some quantum image encoding information and benchmark.
 - Some quantum classification algorithm and benchmark.
 
